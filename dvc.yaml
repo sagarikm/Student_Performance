@@ -1,0 +1,9 @@
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - data/Student_Performance.csv
+    - train.py
+    outs:
+    - artifacts/metrics.txt
+    - artifacts/model.pkl
